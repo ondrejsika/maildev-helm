@@ -1,2 +1,6 @@
 # Required
 host:
+
+# Optional
+smtpServiceType: ClusterIP
+smtpNodePort:

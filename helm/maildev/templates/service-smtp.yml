@@ -5,12 +5,14 @@ metadata:
   labels:
     release: {{ .Release.Name }}
 spec:
-  type: NodePort
+  type: {{ .Values.smtpServiceType }}
   ports:
     - port: 25
       targetPort: smtp
       protocol: TCP
       name: smtp
-      nodePort: 30025
+      {{ if .Values.smtpNodePort }}
+      nodePort:  {{ .Values.smtpNodePort }}
+      {{ end }}
   selector:
     release: {{ .Release.Name }}
