@@ -6,7 +6,7 @@ metadata:
     release: {{ .Release.Name }}
 spec:
   rules:
-    - host: {{ .Values.host }}
+    - host: {{ required "A valid .Values.host entry required!" .Values.host }}
       http:
         paths:
           - path: /

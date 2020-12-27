@@ -21,4 +21,6 @@ helm upgrade --install \
 
 ## Parameters
 
-- `host` (default `maildev.local`) - Ingress hostname
+### Required
+
+- `host` - Ingress hostname
