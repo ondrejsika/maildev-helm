@@ -1,26 +1,3 @@
-# maildev - helm chart
+# Moved to [sikalabs/charts](https://github.com/sikalabs/charts/tree/master/charts/maildev)
 
-    2020 Ondrej Sika <ondrej@ondrejsika.com>
-    https://github.com/ondrejsika/maildev-helm
-
-## Usage
-
-Add repo
-
-```
-helm repo add ondrejsika https://helm.oxs.cz
-```
-
-Install
-
-```
-helm upgrade --install \
-  <name> ondrejsika/maildev \
-  --set host=<domain>
-```
-
-## Parameters
-
-### Required
-
-- `host` - Ingress hostname
+This repo is archived, maildev is moved to <https://github.com/sikalabs/charts/tree/master/charts/maildev>.
